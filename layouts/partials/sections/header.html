@@ -50,35 +50,35 @@
                 <ul class="navbar-nav {{ .Site.Params.navbar.align | default "ms-auto"}} text-center">
                     {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">About</a>
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">A propos</a>
                     </li>
                     {{ end }}
 
                     {{ if and (.Site.Params.experience.enable | default false) (not (.Site.Params.navbar.menus.disableExperience | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#experience"
-                            aria-label="experience">Experience</a>
+                            aria-label="experience">Expérience</a>
                     </li>
                     {{ end }}
 
                     {{ if and (.Site.Params.education.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#education"
-                            aria-label="education">Education</a>
+                            aria-label="education">Formation</a>
                     </li>
                     {{ end }}
 
                     {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
-                            aria-label="projects">Projects</a>
+                            aria-label="projects">Projet</a>
                     </li>
                     {{ end }}
 
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
-                            aria-label="achievements">Achievements</a>
+                            aria-label="achievements">Certification</a>
                     </li>
                     {{ end }}
 
